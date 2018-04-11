@@ -19,7 +19,7 @@
         </header>
         <section>
             <ul class='list'>
-                <li><i class='iconfont icon-tuichu'></i><a href="javascript:;">电源</a></li>
+                <li class='on'><i class='iconfont icon-tuichu'></i><a href="javascript:;">电源</a></li>
                 <li><i class='iconfont icon-shouye'></i><a href="javascript:;">首页</a></li>
                 <li><i class='iconfont icon-gengduo-2'></i><a href="javascript:;">菜单</a></li>
                 <li><i class='iconfont icon-address'></i><a href="javascript:;">截屏</a></li>
@@ -40,7 +40,8 @@
     <script>
         $('.list').on('click', 'li', function() {
             var i = $(this).index();
-            $('.cont div').eq(i).show();
+            $(this).addClass('on').siblings().removeClass('on')
+            $('.cont div').eq(i).show().siblings().hide();;
         })
     </script>
 </body>
