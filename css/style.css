@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: .32%;
+}
+
+html {
+  font-size: .64rem;
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #cccccc5e;
+}
+
+.wrap header {
+  width: 100%;
+  height: 4.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.wrap header a {
+  color: #999;
+  font-size: 1.6rem;
+}
+
+.wrap header i {
+  color: #999;
+}
+
+.wrap section {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.wrap section .list {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.wrap section .list li {
+  width: 25%;
+  flex: 1;
+  text-align: center;
+}
+
+.wrap section .list li i {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  border: .1rem solid #ccc;
+  border-radius: 50%;
+}
+
+.wrap section .list li a {
+  display: block;
+  line-height: 3rem;
+  color: #999;
+}
+
+.wrap section .cont {
+  width: 100%;
+}
+
+.wrap section .cont div {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  display: none;
+}
+
+.wrap footer {
+  width: 100%;
+  height: 6rem;
+  display: flex;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrap footer i {
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  box-sizing: border-box;
+  text-align: center;
+  border: .1rem solid #ccc;
+  border-radius: 50%;
+}
+
+.wrap footer span {
+  width: 17rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  border: .1rem solid #ccc;
+  border-radius: 1.5rem;
+  color: #999;
+}
